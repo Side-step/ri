@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<!--
+Template Name: Metronic - Bootstrap 4 HTML, React, Angular 9 & VueJS Admin Dashboard Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: https://1.envato.market/EA4JP
+Renew Support: https://1.envato.market/EA4JP
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+	<!--begin::Head-->
+	
+<!-- Mirrored from pastel.etherrich.com/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Sep 2020 08:55:45 GMT -->
+<head><base >
+		<meta charset="utf-8" />
+		<title>ETHER RICH | SIGN UP</title>
+		<meta name="description" content="Login page example" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!--begin::Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Page Custom Styles(used by this page)-->
+		<link href="..//assets/css/pages/login/classic/login-6b18f.css?v=7.0.5" rel="stylesheet" type="text/css" />
+
+		<!--end::Page Custom Styles-->
+		<!--begin::Global Theme Styles(used by all pages)-->
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link href="..//assets/plugins/global/plugins.bundleb18f.css?v=7.0.5" rel="stylesheet" type="text/css" />
+		<link href="..//assets/plugins/custom/prismjs/prismjs.bundleb18f.css?v=7.0.5" rel="stylesheet" type="text/css" />
+		<link href="..//assets/css/style.bundleb18f.css?v=7.0.5" rel="stylesheet" type="text/css" />
+
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet">
+
+
+	    <script src="..//js/web3.min.js"></script>
+
+	    <script async defer id="github-bjs" src="..//js/buttons.js"></script>
+	    <script src="..//js/socialjs.js"></script>
+
+		<!--end::Global Theme Styles-->
+		<!--begin::Layout Themes(used by all pages)-->
+		<!--end::Layout Themes-->
+		<link rel="shortcut icon" href="http://../assets/media/logos/favicon.ico" />
+
+
+		<!--===============================================================================================-->
+		<script src="../kit.fontawesome.com/8490f1dbbb.js" crossorigin="anonymous"></script>
+		<script src="..//Content/Scripts/conf.js"></script>
+		<script src="..//Content/Scripts/TransId.js"></script>
+	    <script src="..//Content/Scripts/Signine296e296.js?v=12323"></script>
+	    <script>
+	        $(document).ready(function () {
+				SigninPage();
+				var referralid = getParam("referralid");
+				$("#first-name").val(referralid);
+				$("#first-name").on("keyup", function (item){
+					if (item.keyCode == 13){
+						document.getElementById('lgmbtnsup').click();
+					}
+					if (!(event.keyCode >=37 && event.keyCode<=40)) {
+						var inputVal = $(this).val();
+						$(this).val(inputVal.replace(/[^a-z0-9]/gi,''));
+				   }
+				   		$(this).val($(this).val().toUpperCase());
+				});
+	        });
+			function getParam(sname) {
+				var params = location.search.substr(location.search.indexOf("?") + 1);
+				var sval = "";
+				params = params.split("&");
+				for (var i = 0; i < params.length; i++) {
+					temp = params[i].split("=");
+					if ([temp[0]] == sname) { 
+						sval = temp[1]; 
+					}
+				}
+
+				return sval;
+			}
+	    </script>
+	    <script>
+	        document.addEventListener("DOMContentLoaded", function (event) {
+	            socialjs.init({
+	                container: '.socialjs',
+	                https: true
+	            });
+	        });
+	    </script>
+		<script src="..//js/lang_manage.js"></script>
+		<script>
+			$(document).ready(function(){
+                language_load("signin", get_lang());
+                //initialize flag
+				$(".cur_flag").attr("src", "assets/media/svg/flags/"+get_lang()+".svg")
+			})
+		</script>
+
+	    <style>
+	    	.m { display: none; }
+	    	.pc { display: block; }
+		.textoverflow {
+		    overflow: hidden;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		}
+		.main_lang{
+			display:inline-block;
+			vertical-align: 0;
+		}
+		.dropdown-menu{
+			top:auto;
+			bottom:100%;
+		}
+		@media screen and (max-width: 768px) {
+			.login-divider { display: none ; }
+			.m { display: block; }
+			.pc { display: none !important; }
+		}
+		@media screen and (max-width: 767px) {
+			.dropdown-menu{
+				top:100%;
+				bottom:auto;
+				left: auto;
+				right: 0;
+			}
+		}
+		@media (max-width:480px){
+			.signbt_box{
+				display:table !important;
+				width:100%;
+			}
+			.signbt_box > button,.signbt_box > div{
+				display:table-cell;
+				padding-left:0 !important;
+				padding-right:0 !important;
+			}
+			.signbt_box > button:first-child{
+				width:40%;
+				margin:0 !important;
+			}
+			.signbt_box > button:nth-child(2){
+				width:40%;
+				margin:0 5% !important;
+			}
+			.signbt_box > div{
+				width:10%;
+			}
+		}
+		.modal-body .list-unstyled li:before {
+			content: '\00B7';
+			margin-right: 5px;
+			display: inline-block;
+		}
+		.modal-body .list-unstyled li {
+			margin: 5px;
+			display: flex;
+		}
+		.modal-body .list-unstyled li + li {
+			margin-top: 10px;
+		}
+
+		</style>
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" style="background-image: url(..//assets/media/bg/bg-10.jpg)" class="quick-panel-right demo-panel-right offcanvas-right header-fixed subheader-enabled page-loading">
+		<!--begin::Main-->
+		<div class="d-flex flex-column flex-root">
+			<!--begin::Login-->
+			<div class="login login-6 login-signin-on login-signin-on d-flex flex-row-fluid" id="kt_login">
+				<div class="d-flex flex-column flex-lg-row flex-row-fluid text-center" style="background-image: url(..//assets/media/bg/bg-3.jpg);">
+					<!--begin:Aside-->
+					<div class="d-flex w-100 flex-center">
+						<div class="login-wrapper pc">
+							<!--begin:Aside Content-->
+							<div class="text-dark-75">
+								<a href="#" class="pc"><img src="..//assets/media/logos/logo-letter-13.png" class="max-h-100px" alt="logo" /></a>
+								<h1 class="font-weight-bold my-5 lang_properties" data-langid="signin.sign_txt1">JOIN OUR GREAT POOL</h1>
+								<p class="mb-10 text-muted font-weight-bold lang_properties" data-langid="signin.sign_txt2">Super fast way to make 30+α ETH with one line EtherRichPool</p>
+
+								<div class="mb-10" >
+									<p class="mb-1 font-weight-bold lang_properties" data-langid="signin.contract_address">Contract Address</p>
+									<a class="font-weight-bold" href="https://etherscan.io/address/0x4450c8a913E136436F4973d8459CA21EB4C871f0" target="_blank">0x4450c8a913E136436F4973d8459CA21EB4C871f0 <i class="fa fa-check-circle icon-nm text-success"></i></a>
+								</div>
+
+								<div>
+									<a class="btn btn-outline-primary font-weight-bold btn-lg mx-2" href="https://metamask.io/"><img src="..//assets/media/wallet/meta_logo.png" class="mx-2" height="30"> <span  class="lang_properties" data-langid="signin.sign_mask">METAMASK</span> </a>
+									<a class="btn btn-outline-primary font-weight-bold btn-lg mx-2" href="https://trustwallet.com/"><img src="..//assets/media/wallet/trust_logo.png" class="mx-2" height="30"> <span class="lang_properties" data-langid="signin.sign_wallet">Trust Wallet</span></a>
+								</div>
+							</div>
+							<!--end:Aside Content-->
+						</div>
+					</div>
+					<!--end:Aside-->
+					<!--begin:Divider-->
+					<div class="login-divider pc">
+						<div></div>
+					</div>
+					<!--end:Divider-->
+					<!--begin:Content-->
+					<div class="d-flex w-100 flex-center p-8 position-relative">
+						<div class="login-wrapper">
+							<!--begin:Sign In Form-->
+							<div class="login-signin">
+								<div class="text-center mb-10 mb-lg-10">
+										<a class="mb-5 m" href="#"><img src="..//assets/media/logos/logo-letter-13.png" height="80" alt="logo" /></a>
+									<h2 class="font-weight-bold lang_properties" data-langid="signin.sign_up">Sign Up</h2>
+									<p class="text-muted font-weight-bold lang_properties" data-langid="signin.signup_txt1">You don't have referral code use 'RICH' as referral id.</p>
+								</div>
+								<form class="form text-left" onsubmit="return false" id="signupform">
+									<div class="form-group py-2 m-0 border-bottom">
+										<input class="form-control h-auto border-0 px-0 placeholder-dark-75" type="text" placeholder="Enter Referral ID" id="first-name" name="referral" autocomplete="on" />
+									</div>
+
+									<div class="modal fade" id="signup_notice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									    <div class="modal-dialog" role="document">
+									        <div class="modal-content">
+									            <div class="modal-header">
+									                <h5 class="modal-title lang_properties" id="exampleModalLabel" data-langid="signin.atten_tit">Attention</h5>
+									                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									                    <i aria-hidden="true" class="ki ki-close"></i>
+									                </button>
+									            </div>
+									            <div class="modal-body">
+									            	<ul class="list-unstyled">
+													<li class="lang_properties" data-langid="signin.atten_txt1">지갑 생성시 복구 문자는 꼭 본인이 보관하세요.</li>
+													<li class="lang_properties" data-langid="signin.atten_txt2">지갑 및 복구문자 분실 시 이더리치에서 찾아줄 수 없습니다.</li>
+													<li class="lang_properties" data-langid="signin.atten_txt3">추천인 코드(아이디)는 숫자+영문 5자로 랜덤구성되며, 가입이 완료되면 변경이 불가능합니다.</li>
+													<li class="lang_properties" data-langid="signin.atten_txt4">GAS FEE(계약 수수료)는 이더리움 메인넷 상황에 따라 매 시점 변동이 있습니다.</li>
+									            	</ul>
+									          </div>
+									          <div class="modal-footer">
+									                <button type="button" class="btn btn-light-primary font-weight-bold lang_properties" data-langid="signin.atten_close" data-dismiss="modal">Close</button>
+									                <!-- <button id="lgambtnsup" type="button" class="btn btn-primary font-weight-bold lang_properties" data-langid="signin.sign_up">Sign Up</button> -->
+									                <button type="button" class="btn btn-primary font-weight-bold lang_properties" data-langid="signin.sign_up" data-dismiss="modal" id="lgmbtnsup" >Sign Up</button>
+									            </div>
+									        </div>
+									    </div>
+									</div>
+
+
+									<div class="form-group d-flex flex-wrap justify-content-between align-items-center mt-5">
+									</div>
+									<div class="form-group d-flex flex-wrap flex-center signbt_box">
+										<!-- <button type="button" class="btn btn-success btn-pill font-weight-bold py-4 my-3 mx-2">Singup(Pause)</button> -->
+										<button type="button" class="btn btn-success btn-pill font-weight-bold py-4 my-3 mx-2 lang_properties" data-langid="signin.sign_up" id="lgmbtnsup_" data-toggle="modal" data-target="#signup_notice">Sign Up</button>
+										<button type="button" class="btn btn-outline-dark btn-pill font-weight-bold py-4 my-3 mx-2" onclick="javascript:history.back();"><i class="la la-arrow-left"></i><span class="lang_properties" data-langid="signin.back">Back</span></button>
+										<div class="main_lang">
+											<!--begin::Languages-->
+											<div class="dropdown">
+												<!--begin::Toggle-->
+												<div class="topbar-item main_lang_en">
+													<div class="btn btn-icon btn-hover-transparent-white btn-dropdown btn-lg mr-1">
+														<img class="h-20px w-20px rounded-sm cur_flag" src="http://../assets/media/svg/flags/en.svg" alt="" />
+													</div>
+												</div>
+												<!--end::Toggle-->
+												<!--begin::Dropdown-->
+												<div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-left">
+													<!--begin::Nav-->
+													<ul class="navi navi-hover py-4 main_lang_navi">
+														<!--begin::Item-->
+														<li class="navi-item">
+															<a onclick="set_lang('en');" class="navi-link">
+																<span class="symbol symbol-20 mr-3">
+																	<img src="http://../assets/media/svg/flags/en.svg" alt="" />
+																</span>
+																<span class="navi-text">English</span>
+															</a>
+														</li>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<li class="navi-item">
+															<a onclick="set_lang('ru');" class="navi-link">
+																<span class="symbol symbol-20 mr-3">
+																	<img src="http://../assets/media/svg/flags/ru.svg" alt="" />
+																</span>
+																<span class="navi-text">Russian</span>
+															</a>
+														</li>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<li class="navi-item active">
+															<a onclick="set_lang('zh');" class="navi-link">
+																<span class="symbol symbol-20 mr-3">
+																	<img src="http://../assets/media/svg/flags/zh.svg" alt="" />
+																</span>
+																<span class="navi-text">Chinese</span>
+															</a>
+														</li>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<li class="navi-item">
+															<a onclick="set_lang('ko');" class="navi-link">
+																<span class="symbol symbol-20 mr-3">
+																	<img src="http://../assets/media/svg/flags/ko.svg" alt="" />
+																</span>
+																<span class="navi-text">Korean</span>
+															</a>
+														</li>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<li class="navi-item">
+															<a onclick="set_lang('ja');" class="navi-link">
+																<span class="symbol symbol-20 mr-3">
+																	<img src="http://../assets/media/svg/flags/ja.svg" alt="" />
+																</span>
+																<span class="navi-text">Japanese</span>
+															</a>
+														</li>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<li class="navi-item">
+															<a onclick="set_lang('es');" class="navi-link">
+																<span class="symbol symbol-20 mr-3">
+																	<img src="http://../assets/media/svg/flags/es.svg" alt="" />
+																</span>
+																<span class="navi-text">Spanish</span>
+															</a>
+														</li>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<li class="navi-item">
+															<a onclick="set_lang('th');" class="navi-link">
+																<span class="symbol symbol-20 mr-3">
+																	<img src="http://../assets/media/svg/flags/th.svg" alt="" />
+																</span>
+																<span class="navi-text">Thai</span>
+															</a>
+														</li>
+														<!--end::Item-->
+														<!--begin::Item-->
+														<li class="navi-item">
+															<a onclick="set_lang('vn');" class="navi-link">
+																<span class="symbol symbol-20 mr-3">
+																	<img src="http://../assets/media/svg/flags/vn.svg" alt="" />
+																</span>
+																<span class="navi-text">Vietnamese</span>
+															</a>
+														</li>
+														<!--end::Item-->
+													</ul>
+													<!--end::Nav-->
+												</div>
+												<!--end::Dropdown-->
+											</div>
+										</div>
+									</div>
+								</form>
+
+
+								<div class="m">
+									<div class="py-10" >
+										<p class="mb-1 font-weight-bold lang_properties" data-langid="signin.contract_address">Contract Address</p>
+										<a class="d-block font-weight-bold textoverflow" style="" href="https://etherscan.io/address/0x4450c8a913E136436F4973d8459CA21EB4C871f0" target="_blank">0x4450c8a913E136436F4973d8459CA21EB4C871f0 <i class="fa fa-check-circle icon-nm text-success"></i></a>
+									</div>
+
+									<div>
+										<a class="btn btn-outline-primary font-weight-bold btn-lg btn-block my-3" href="https://metamask.io/"><img src="..//assets/media/wallet/meta_logo.png" class="mx-2" height="30"> <span class="lang_properties" data-langid="signin.sign_mask">METAMASK</span> </a>
+										<a class="btn btn-outline-primary font-weight-bold btn-lg btn-block my-3" href="https://trustwallet.com/"><img src="..//assets/media/wallet/trust_logo.png" class="mx-2" height="30"> <span class="lang_properties" data-langid="signin.sign_wallet">Trust Wallet</span></a>
+									</div>
+								</div>
+							</div>
+							<!--end:Sign In Form-->
+						</div>
+					</div>
+					<!--end:Content-->
+				</div>
+			</div>
+			<!--end::Login-->
+		</div>
+		<!--end::Main-->
+
+
+
+
+
+		<!--begin::Global Config(global config for global JS scripts)-->
+		<script>var KTAppSettings = {
+			"breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1200 },
+			"colors": {
+				"theme": {
+					"base": {
+						"white": "#ffffff",
+						"primary": "#6993FF",
+						"secondary": "#E5EAEE",
+						"success": "#1BC5BD",
+						"info": "#8950FC",
+						"warning": "#FFA800",
+						"danger": "#F64E60",
+						"light": "#F3F6F9",
+						"dark": "#212121" },
+						"light": {
+							"white": "#ffffff",
+							"primary": "#E1E9FF",
+							"secondary": "#ECF0F3",
+							"success": "#C9F7F5",
+							"info": "#EEE5FF",
+							"warning": "#FFF4DE",
+							"danger": "#FFE2E5",
+							"light": "#F3F6F9",
+							"dark": "#D6D6E0" },
+							"inverse": {
+								"white": "#ffffff",
+								"primary": "#ffffff",
+								"secondary": "#212121",
+								"success": "#ffffff",
+								"info": "#ffffff",
+								"warning": "#ffffff",
+								"danger": "#ffffff",
+								"light": "#464E5F",
+								"dark": "#ffffff" }
+								},
+								"gray": {
+									"gray-100": "#F3F6F9",
+									"gray-200": "#ECF0F3",
+									"gray-300": "#E5EAEE",
+									"gray-400": "#D6D6E0",
+									"gray-500": "#B5B5C3",
+									"gray-600": "#80808F",
+									"gray-700": "#464E5F",
+									"gray-800": "#1B283F",
+									"gray-900": "#212121" }
+									},
+									"font-family": "Poppins" };</script>
+		<!--end::Global Config-->
+		<!--begin::Global Theme Bundle(used by all pages)-->
+		<script src="..//assets/plugins/global/plugins.bundleb18f.js?v=7.0.5"></script>
+		<script src="..//assets/plugins/custom/prismjs/prismjs.bundleb18f.js?v=7.0.5"></script>
+
+		<!--end::Global Theme Bundle-->
+		<!--begin::Page Scripts(used by this page)-->
+		<script src="..//assets/js/pages/custom/login/login-generalb18f.js?v=7.0.5"></script>
+		<div id="dropDownSelect1"></div>
+
+		 <!-- particle js-->
+		 <script src="..//Content/assets/js/particles.min.js"></script>
+		 <script src="..//Content/assets/js/app.js"></script>
+		 <script src="..//mainpage/js/scripts.js"></script>
+		 <script src="..//assets/js/scripts.bundleb18f.js?v=7.0.5"></script>
+		<!--end::Page Scripts-->
+		<!--begin::Page Scripts(used by this page)-->
+	<script src="..//assets/js/pages/features/miscellaneous/toastrb18f.js?v=7.0.5"></script>
+	<!--end::Page Scripts-->
+	<script>
+		 $(function(){
+			toastr.options = {
+				  "closeButton": true,
+				  "debug": false,
+				  "newestOnTop": false,
+				  "progressBar": false,
+				  "positionClass": "toast-bottom-right",
+				  "preventDuplicates": false,
+				  "onclick": null,
+				  "showDuration": "300",
+				  "hideDuration": "1000",
+				  "timeOut": 0,
+				  "extendedTimeOut": 0,
+				  "showEasing": "swing",
+				  "hideEasing": "linear",
+				  "showMethod": "fadeIn",
+				  "hideMethod": "fadeOut",
+				  "tapToDismiss": false
+				};
+
+				//toastr.error("공공장소 및 타인의 디바이스에서 접속하셨나요?그렇다면  사용후 꼭 지갑을 삭제 해주세요.유출된 지갑 또는 복구문자는 이더리치에서 찾아줄수 없습니다.<br /><br /><button type='button' class='btn btn-outline-light btn-sm--air--wide clear'>확인</button>", "Warning");
+				get_commonlang("common.indi_warning",get_lang(), function (data){ 
+					toastr.error(data[0]+"<br /><br /><button type='button' class='btn btn-outline-light btn-sm--air--wide clear' onclick='close_pop()'>" + data[1] +"</button>",data[2]);
+				});
+		 });
+		 function close_pop(){
+			$('#toast-container > div').hide();
+		 }
+	</script>
+	</body>
+	<!--end::Body-->
+
+<!-- Mirrored from pastel.etherrich.com/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Sep 2020 08:55:46 GMT -->
+</html>
